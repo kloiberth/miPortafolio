@@ -116,6 +116,8 @@ h1+p{
 
 
 .header--img{
+    margin: 0 -2.5rem 0 1.5rem;
+    border-radius: 10%;
     max-width: 304px;
 }
 
@@ -255,6 +257,10 @@ h1+p{
     color: var(--gris-oscuro--);
 }
 
+.years{
+
+}
+
 .years p{
     font-weight: 600;
 }
@@ -280,6 +286,12 @@ h1+p{
     margin: 0 auto;
     align-items: center;
     flex-direction: column;
+}
+
+.title-contacto{
+
+    text-align: center;
+    margin: 2rem 0 0.7rem 0;
 }
 
 .cont-contacto{
@@ -314,15 +326,25 @@ h1+p{
     margin: 0 0 2rem 0
 }
 
+.uno{
+
+}
+
+.dos{
+
+}
+
+.tres{
+
+}
+
 .derecho-autor{
     text-align: center;
 }
 
 
 
-
-@media screen and (min-width: 768px) {
-    
+@media screen and (min-width: 768px){
     label{
         display: none;
     }
@@ -345,29 +367,153 @@ h1+p{
         color: var(--morado--);
     }
 
-    .header-information {
-        padding: 4rem 1.5rem;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
+    .header-information{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 2rem 0 2rem;
+        gap: 1rem;
     }
 
-    .header-text h1 {
+    .header-text h1{
         font-size: 45px;
-        font-weight: 600;
+    }
+
+    .title-my{
+        margin: 2rem 0 0.5rem 0;
+        font-size: 40px;
+    }
+   
+    .cont-sobre-mi{
+        max-width: 651px;
+        max-height: 159px;
+        padding: 0.5rem;
+        font-size: 17px;
+        color: var(--gris-oscuro--);
+    }
+
+    .title-skills{
+        margin: 2rem 0 0.5rem 0;
+        font-size: 40px;
+    }
+
+    .container-skills{
+        padding: 0 .5rem 0 .5rem;
+        width: 47rem;
+        margin: 0 auto;
+        gap: 2rem;
+        overflow: visible;
+    }
+
+    .title-experiencia{
+        font-size: 40px;
         text-align: center;
+
+    }
+
+    .section-experiencia{
+        width: 634px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        height: 95px;
+        margin: 0 auto;
+    }
+
+    .cont-experiencia{
+        display: inline-block;
+    }
+
+    .years{
+        margin: 0 0 0 3rem;
+    }
+
+    .years p{
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .cont-job{
+        display: flex;
+    }
+
+    .cont-job img{
+        margin: 0 1rem 0 0;
+        width: 49px;    
+    }
+    
+    .info h3{
+        font-size: 25px;
+        font-weight: 600;  
+    }
+
+    .info>p{
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--gris-oscuro--);
+    }
+
+    .info span{
+        font-size: 14px;
+        color: var(--gris-oscuro--); 
+    }
+
+    .title-portafolio{
+        font-size: 40px;
+    }
+
+    .cont-portafolio{
+        padding: 0.5rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; 
+    }
+
+    .cont-informacion{ 
+        display: grid;
+        margin: 0 0 2rem 0;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (min-width: 1024){
-    .header-information {
-        padding: 4rem 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+
+@media screen and (min-width: 1024px) {
+    
+    .header-information{
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 6rem 0 6rem;
+        gap: 2rem;
+    }
+    .cont-sobre-mi{
+        max-width: 730px;
+        padding: 0.5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1440){
+
+    .header-information{
+        justify-content: center;
+        margin: 0 6rem 0 6rem;
         gap: 2rem;
     }
 
+    .cont-sobre-mi {
+        max-width: 969px;
+    }
+
+    .title-portafolio{
+       margin: 4rem 0 0.5rem 0;
+    }
+
+    .container-skills{
+        margin: 1rem 2rem 1rem 8rem;
+        gap: 9rem;
+        overflow: hidden;
+    }
+    
 }
 
 
