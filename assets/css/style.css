@@ -22,11 +22,17 @@ body{
 }
 
 .nav{
+    position: fixed;
+    width: 100%;
+    right: 0;
+    left: 0;
+    background-color: white;
     display: flex;
     padding: 1rem 1.5rem;
     align-items: center;
     justify-content: space-between;
     height: 55px;
+    z-index: 1;
 }
 
 #btn-menu{
@@ -69,7 +75,7 @@ visibility: hidden;
 }
 
 .header-information{
-    padding: 1rem 1.5rem;
+    padding: 4rem 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,8 +88,9 @@ visibility: hidden;
 .header-text{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
-    max-width: 350px;
+    max-width: 363px;
 }
 
 .header-text h1{
@@ -95,16 +102,15 @@ visibility: hidden;
 h1+p{
     color: var(--gris-oscuro--);
     font-size: 18px;
+    text-align: center;
 
 }
 
-.social-container{
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    max-width: 260px;
-    margin: 0;
+.social-container a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 1rem;
 }
 
 
@@ -123,12 +129,15 @@ h1+p{
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--morado-oscuro--);
-    padding: .5rem;
-    max-width: 260px;
+    padding: 7px 3.5rem;
+    max-width: 272px;
 }
 
 .btn-contacto img{
-    width: 32px;
+    position: relative;
+    left: -11px;
+    width: 16px;
+    z-index: 0;
 }
 
 .btn-contacto a{
@@ -136,27 +145,122 @@ h1+p{
     color: var(--blanco--);
 }
 
+.title-my{
+    margin: 4rem 0 0.5rem 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
 
-/* position: absolute;
-    background-color: palevioletred;
-    width: 100%;
-    top: 80px;
-    min-height: calc(100vh - 80px);
-    padding: 1.5rem 1rem;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
+.cont-sobre-mi{
+    max-width: 425px;
+    height: 225px;
+    margin: 0 auto;
+}
+
+
+.cont-sobre-mi p{
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--gris-oscuro--);
+}
+
+.title-skills{
+    text-align: center;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container-skills{
+    width: 80%;
+    height: 270px;
+    padding: 0.2rem 1rem;
+    margin: 0 auto;
     display: flex;
-    right: -100%;
-    transition: right .5s linear; */
+    gap: 6rem;
+    overflow-x: scroll;
+}
 
+.skills{
+    background-color: var(--pastel--);
+    display: inline-block;
+    width: 180px;
+    height: 255px;
+    padding: 0.5rem 1.8rem;
+}
 
+.skills h3{
+    text-align: center;
+    font-size: 16px;
+}
 
+.skills h3>img{
 
+}
 
+.skills p{
+    color: var(--gris-oscuro--);
+    text-align: center;
+}
 
+.title-portafolio{
+    text-align: center;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 30px;
+    font-weight: 60
+}
 
+.cont-portafolio{
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cont-portafolio img{
+    max-width: 350px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont-contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.cont-contacto img{
+
+}
+
+.informacion .numero{
+    margin: 0.5rem 0 1.5rem;
+}
+
+.informacion .numero+p{
+    margin-bottom: 3rem;
+}
+
+.informacion .email{
+    text-align: center;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.informacion .email+p{
+    margin-bottom: 3rem;
+}
+
+.cont-informacion{
+    margin: 0 0 2rem 0
+}
+
+.derecho-autor{
+    text-align: center;
+}
 
 
 
@@ -185,3 +289,55 @@ h1+p{
         color: var(--morado--);
     }
 }
+
+.title-experiencia{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 3rem 0 0.5rem 0
+}
+
+.cont-experiencia{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 356px;
+}
+
+
+
+.job-container{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.job-information h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.job-information .job{
+color: var(--gris-oscuro--);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.job-information .duration{
+    color: var(--gris-oscuro--);
+    font-size: 13px;
+}
+.cont-years{
+    display: flex;
+    padding: 1rem 0 0 0;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.years>span{
+    font-size: 18px;
+    font-weight: 600;
+} 
