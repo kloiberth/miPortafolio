@@ -204,11 +204,66 @@ h1+p{
     text-align: center;
 }
 
+.title-experiencia{
+    text-align: center;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.section-experiencia{
+    
+    width: 375px;
+    margin: 0 auto;
+
+}
+
+.cont-experiencia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    
+}
+
+.cont-job{
+    display: flex;
+}
+
+.cont-job img{
+    width: 40px;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info>p{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gris-oscuro--);
+}
+
+.info span{
+    font-size: 11px;
+    color: var(--gris-oscuro--);
+}
+
+.years p{
+    font-weight: 600;
+}
+
+
 .title-portafolio{
     text-align: center;
     margin: 2rem 0 0.5rem 0;
     font-size: 30px;
-    font-weight: 60
+    font-weight: 600;
 }
 
 .cont-portafolio{
@@ -290,54 +345,4 @@ h1+p{
     }
 }
 
-.title-experiencia{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    margin: 3rem 0 0.5rem 0
-}
 
-.cont-experiencia{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0.5rem;
-    width: 356px;
-}
-
-
-
-.job-container{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.job-information h3{
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.job-information .job{
-color: var(--gris-oscuro--);
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.job-information .duration{
-    color: var(--gris-oscuro--);
-    font-size: 13px;
-}
-.cont-years{
-    display: flex;
-    padding: 1rem 0 0 0;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 5rem;
-}
-
-.years>span{
-    font-size: 18px;
-    font-weight: 600;
-} 
