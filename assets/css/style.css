@@ -157,7 +157,7 @@ h1+p{
 .cont-sobre-mi{
     width: 266px;
     height: 276px;
-    margin: 0 0 0rem 2rem
+    margin: 0 0 0 2rem;
 }
 
 
@@ -344,7 +344,7 @@ h1+p{
 @media screen and (min-width: 425px){
 
     .header-information{
-        margin: 0 0 0 0rem;
+        margin: 0;
     }
 
     .cont-sobre-mi {
