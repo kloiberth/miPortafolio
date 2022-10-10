@@ -325,21 +325,17 @@ h1+p{
     margin: 0 0 2rem 0
 }
 
-.uno{
-
-}
-
-.dos{
-
-}
-
-.tres{
-
-}
-
 .derecho-autor{
     text-align: center;
 }
+
+
+@media screen and (min-width: 375px){
+    .header-information{
+        margin: 0;
+    }
+}
+
 
 @media screen and (min-width: 425px){
 
