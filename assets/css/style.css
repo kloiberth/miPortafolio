@@ -80,8 +80,8 @@ visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-
+    gap: 3rem;
+    margin: 0 0 0 3rem;
 }
 
 
@@ -116,7 +116,6 @@ h1+p{
 
 
 .header--img{
-    margin: 0 -2.5rem 0 1.5rem;
     border-radius: 10%;
     max-width: 304px;
 }
@@ -156,9 +155,9 @@ h1+p{
 }
 
 .cont-sobre-mi{
-    max-width: 425px;
-    height: 225px;
-    margin: 0 auto;
+    width: 266px;
+    height: 276px;
+    margin: 0 0 0rem 2rem
 }
 
 
